@@ -1,0 +1,265 @@
+/*
+ * Globals
+ */
+ @font-face {
+	font-family: SVN-GilroyBold;
+	src: url(./fonts/SVNGilroy/SVN-Gilroy-Bold.otf);
+}
+@font-face {
+	font-family: SVN-GilroyLight;
+	src: url(./fonts/SVNGilroy/SVN-Gilroy-Light.otf);
+}
+@font-face {
+	font-family: SVN-GilroyMedium;
+	src: url(./fonts/SVNGilroy/SVN-Gilroy-Medium.otf);
+}
+body {
+	font-family: SVN-Gilroy;
+    color: #fff;
+    background: url(./bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+header, main, footer {
+	padding: 0 50px;
+}
+
+/* HEADER------------------------------------------------ */
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+header #logo img {
+	width: 104;
+}
+
+#hotline {
+	color: #00505B!important;
+	text-decoration: none!important;
+	margin-top: 50px;
+	font-weight: 600;
+	font-size: 20px;
+	background-color: #fff;
+	height: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: #00505B;
+	border-style: solid;
+	font-family: SVN-GilroyBold;
+}
+
+/* MAIN------------------------------------------------ */
+main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 50%;
+	text-align: left;
+}
+
+main #description .title-top {
+	font-size: 56px;
+	color: #fff;
+	font-family: SVN-GilroyBold;
+}
+main #description .title {
+	font-size: 56px;
+	color: #F4C34C;
+	font-family: SVN-GilroyBold;
+}
+
+main #description #content {
+	font-size: 20px;
+	font-family: SVN-GilroyLight;
+}
+
+main #description #store a:nth-child(2) {
+	margin-left: 10px;
+}
+
+main #description #store img{
+	width: 200px;
+	height: 75px;
+}
+
+main #phone_img img {
+	width: 650px;
+}
+/* FOOTER------------------------------------------------ */
+
+footer {
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	float: left;
+}
+
+footer .title {
+	font-size: 20px;
+	font-family: SVN-GilroyMedium;
+}
+
+footer #social a:nth-child(2), footer #social a:nth-child(3) {
+	margin-left: 10px;
+}
+
+footer #social a img {
+	width: 50px;
+}
+
+@media only screen and (max-width: 320px) {
+	header #logo img {
+		width: 62px;
+	}
+
+	#hotline {
+		font-size: 15px;
+		height: 15px;
+	}
+
+	main #description .title {
+		font-size: 20px;
+	}
+	main #description .title-top {
+		margin-top: 100px;
+		font-size: 20px;
+		color: #fff;
+		font-family: SVN-GilroyBold;
+	}
+
+	body {
+		background: url(./bg_mobile.png) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	main #description #content {
+		font-size: 15px;
+		font-family: SVN-GilroyLight;
+	}
+
+	main #phone_img img {
+		width: 300px;
+	}
+
+	main #description #store img{
+		width: 150px;
+	}
+
+	footer #social a img {
+		width: 32px;
+	}
+
+	footer .title {
+		font-size: 15px;
+		font-family: SVN-GilroyMedium;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+	header #logo img {
+		width: 62px;
+	}
+
+	#hotline {
+		font-size: 15px;
+		height: 15px;
+		margin-top: 10px;
+	}
+
+	main #description .title {
+		font-size: 20px;
+	}
+
+	main #description .title-top {
+		margin-top: 400px;
+		font-size: 20px;
+		color: #fff;
+		font-family: SVN-GilroyBold;
+	}
+
+	body {
+		background: url(./bg_mobile.png) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	main #description #content {
+		font-size: 15px;
+		font-family: SVN-GilroyLight;
+	}
+
+	/* main #phone_img img {
+		width: 400px;
+	} */
+
+	main #description #store img{
+		width: 150px;
+		height: 51px;
+	}
+
+	footer #social a img {
+		width: 32px;
+	}
+
+	footer .title {
+		font-size: 15px;
+		font-family: SVN-GilroyMedium;
+	}
+
+	main {
+		max-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+	header #logo img {
+		width: 200px;
+	}
+
+	main #description .title {
+		font-size: 25px;
+	}
+
+	main #description #content {
+		font-size: 20px;
+	}
+	/* main #phone_img img {
+		width: 400px;
+	} */
+	main #description #store img{
+		width: 180px;
+	}
+	
+}
+
+@media only screen and (max-width: 1024px) {
+	main {
+		flex-direction: column;
+		align-items: center;
+	}
+	main #phone_img img {
+		margin-top: 20px;
+
+	}
+	header, main, footer {
+		padding: 5px;
+	}
+
+	footer {
+		/* float: none; */
+		margin-left: 0px;
+	}
+
+}
