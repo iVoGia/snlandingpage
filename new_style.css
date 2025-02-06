@@ -122,6 +122,9 @@ footer #social a img {
 	#hotline {
 		font-size: 15px;
 		height: 15px;
+		margin-top: 10px;
+		color: #00505B!important;
+		text-decoration: none!important;
 	}
 
 	main #description .title {
