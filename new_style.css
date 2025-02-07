@@ -97,7 +97,7 @@ footer {
 	margin-left: 15px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: start;
 	float: left;
 }
 
@@ -112,6 +112,13 @@ footer #social a:nth-child(2), footer #social a:nth-child(3) {
 
 footer #social a img {
 	width: 50px;
+}
+
+footer #email {
+	color: #fff;
+	font-size: 20px;
+	font-family: SVN-GilroyMedium;
+	padding-top: 10px;
 }
 
 @media only screen and (max-width: 320px) {
@@ -166,12 +173,18 @@ footer #social a img {
 		font-size: 15px;
 		font-family: SVN-GilroyMedium;
 	}
+
+	footer #email {
+		color: #fff;
+		font-size: 15px;
+		font-family: SVN-GilroyMedium;
+		padding-top: 10px;
+	}
 }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
 	header #logo img {
 		width: 62px;
-		src: url(./logo62.svg);
 	}
 
 	#hotline {
@@ -226,6 +239,13 @@ footer #social a img {
 
 	main {
 		max-width: 100%;
+	}
+
+	footer #email {
+		color: #fff;
+		font-size: 15px;
+		font-family: SVN-GilroyMedium;
+		padding-top: 10px;
 	}
 }
 
